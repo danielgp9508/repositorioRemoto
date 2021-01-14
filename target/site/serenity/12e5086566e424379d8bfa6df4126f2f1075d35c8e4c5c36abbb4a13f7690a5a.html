@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+
+        $('.scenario-result-table').DataTable({
+
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 25,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
+        });
+
+    })
+    ;
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Tag  (with Tag Tag)
+                > <span
+                    class="truncate-60">Tag</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-12-2019 21:32</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='fa fa-tags'></i> Tag: Tag</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div class="test-count-title">7
+                                    test scenarios (9 tests in all, including 9
+                                    rows of test data)</div>
+                                <div>
+
+                    <span class="test-count"> |
+                        5
+                            <a href="a3775ee2202f3d7739d565457f20ba710f4daa05397c8a04338898caa1b8e95d.html">passed</a>
+                        
+                    </span>
+                    <span class="test-count"> |
+                        2
+                            <a href="73d8c9e2ae2f5d199dea53ad8cbbcc60588e486e95438c75cb4e32556f0b5e05.html">unsuccessful</a>
+                        
+                    </span>(
+                    <span class="test-count">
+                        2
+                            <a href="5342638102f9b5bb5661864a9d70a99fa5d40fb6ca3bc763fec02be4ae3b7da7.html">failed</a>
+                        ,
+                    </span>
+                    <span class="test-count">
+                        0
+errors
+                    </span>)
+
+                
+
+
+
+                 |
+                    <a href="12e5086566e424379d8bfa6df4126f2f1075d35c8e4c5c36abbb4a13f7690a5a.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="fas fa-home"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="fas fa-tachometer-alt"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                            <div class="ct-chart ct-square"></div>
+                                                        </div>
+                                                        <script>
+
+                                                            var labels = ['67%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '33%', ' ', ' ', ' ', ' ', ' '];
+                                                            // Our series array that contains series objects or in this case series data arrays
+
+                                                            var series = [{meta: 'Passing tests (automated)', value: 6}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 3}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                            // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                            // as you saw in the previous example
+                                                            var options = {
+                                                                width: 350,
+                                                                height: 300
+                                                            };
+
+
+                                                            new Chartist.Pie('.ct-chart', {
+                                                                series: series,
+                                                                labels: labels
+                                                            }, {
+                                                                plugins: [ Chartist.plugins.tooltip() ],
+                                                                donut: true,
+                                                                donutWidth: 60,
+                                                                donutSolid: true,
+                                                                startAngle: 270,
+                                                                showLabel: true
+                                                            }, options);
+
+
+                                                            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                                new Chartist.Pie('.ct-chart', {
+                                                                    series: series,
+                                                                    labels: labels
+                                                                }, {
+                                                                    plugins: [ Chartist.plugins.tooltip() ],
+                                                                    donut: true,
+                                                                    donutWidth: 60,
+                                                                    donutSolid: true,
+                                                                    startAngle: 270,
+                                                                    showLabel: true
+                                                                }, options);
+                                                            });
+
+
+                                                        </script>
+                                                    </div>
+                                                    <div class="col-sm-8">
+
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Scenarios</th>
+                                                                <th scope="col" colspan="2" class="automated-stats">
+                                                                    Automated
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="a3775ee2202f3d7739d565457f20ba710f4daa05397c8a04338898caa1b8e95d.html"><i class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    </td>
+                                                                <td class="automated-stats">6</td>
+                                                                <td class="automated-stats">67%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                    </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="5342638102f9b5bb5661864a9d70a99fa5d40fb6ca3bc763fec02be4ae3b7da7.html"><i class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                                <td class="automated-stats">3</td>
+                                                                <td class="automated-stats">33%</td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr class="summary-stats">
+                                                                <td class="aggregate-result-count">Total</td>
+                                                                <td class="automated-stats">9</td>
+                                                                <td class="automated-stats"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Functional Coverage Overview</h3>
+
+                                                            <table class="table" id="Feature">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Feature</th>
+                                                                        <th style=""width:7.5em;">Scenarios</th>
+                                                                        <th style=""width:7.5em;">% Pass</th>
+                                                                        <th style=""width:7.5em;">Result</th>
+                                                                        <th>Coverage</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><a href="f4456a3a6ee7e6e5d9e622b9bfbc8f294296eabe9ff99fa21e06dba6a1626213.html">Proyecto semillero modulo categoría para adultos</a></td>
+                                                                        <td>5</td>
+                                                                        <td>80%</td>
+                                                                        <td><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 60%; background-color: #30cb23"
+                                                                                         aria-valuenow="3"
+                                                                                         title="60% success"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 40%; background-color: #f8001f"
+                                                                                         aria-valuenow="2"
+                                                                                         title="40% failure"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a href="538ccd2b1cfd7f45a601eb53070d3b6aaafa0fad296feb3c24355eb562f57525.html">Proyecto semillero modulo inicio sesion</a></td>
+                                                                        <td>4</td>
+                                                                        <td>75%</td>
+                                                                        <td><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 75%; background-color: #30cb23"
+                                                                                         aria-valuenow="3"
+                                                                                         title="75% success"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 25%; background-color: #f8001f"
+                                                                                         aria-valuenow="1"
+                                                                                         title="25% failure"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h3>Test Failure Overview</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Frequent Failures</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="failure-color top-list-title">
+                                                                    <a href="f1ec91ad8723d53763f03b5b749bb782fb7c3ede5f96bd24161b1f6faf18d2a6.html"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> Assertion failed error</a>
+                                                                </td>
+                                                                <td><span class="badge failure-badge">2</span></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Unstable Features</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="failure-color top-list-title"><a href="#">Proyecto Semillero Modulo categoría para Adultos</a></td>
+                                                                    <td><span class="badge failure-badge">1</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="failure-color top-list-title"><a href="#">Proyecto Semillero Modulo Inicio Sesion</a></td>
+                                                                    <td><span class="badge failure-badge">1</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Tags</h3>
+
+                                                        <span>
+                                                            <a href="bca18eb34184f466810ee7a90d04748e21a2df6dea7311083e75ce6b8ed2a2f5.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> tag1&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">
+                                                                <span class="badge" style="background-color:#f8001f; margin:1em;padding:4px;"><i class="fa fa-tag"></i> tag&nbsp;&nbsp;&nbsp;9</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="f4456a3a6ee7e6e5d9e622b9bfbc8f294296eabe9ff99fa21e06dba6a1626213.html">
+                                                                <span class="badge" style="background-color:#f8001f; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Proyecto semillero modulo categoría para adultos (feature)&nbsp;&nbsp;&nbsp;5</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="57d1b69a7dc50823c8091e16642089ef4789d62ed24634065ab9b7a27653fe5b.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> tag2&nbsp;&nbsp;&nbsp;2</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="4e9343d20c172a4f0517b74412de045d42d0e6124672772f601b44619d0d2e2f.html">
+                                                                <span class="badge" style="background-color:#f8001f; margin:1em;padding:4px;"><i class="fa fa-tag"></i> tag3&nbsp;&nbsp;&nbsp;2</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="538ccd2b1cfd7f45a601eb53070d3b6aaafa0fad296feb3c24355eb562f57525.html">
+                                                                <span class="badge" style="background-color:#f8001f; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Proyecto semillero modulo inicio sesion (feature)&nbsp;&nbsp;&nbsp;4</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="1731d19c99e6882e54ec1c3949a888f19e29958bd7cd56030f41461aa888290b.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Usuario&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="04b4a656edcfcb13ef6097267146557e8acfc06b168c5e3431d920ffa14e9900.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> UsuarioContraseña&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="4af859eef0b2d88751fe580892f71e01d1e98a1dff7dcf94deb3bb4b4655280a.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> UsuarioNOexistente&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="cffe7a96deb92ec03220c8d39a9946d4169185822ab9dc4916cbfc757a00986e.html">
+                                                                <span class="badge" style="background-color:#f8001f; margin:1em;padding:4px;"><i class="fa fa-tag"></i> UsuarioContraseñaNoexistente&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="36421dcbec78646e7fcf601abea8d179f5ee6c3034169d16dd1ab7cd26b86e36.html">Proyecto Semillero Modulo categoría para Adultos</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="eef0f6f14b4eaa41f2ce04875550df723e1c58e4ab92aadf8031e635ec996a6a.html">Filtro automático con paralabra</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:22:24</td>
+                                                    <td>00:52</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="36421dcbec78646e7fcf601abea8d179f5ee6c3034169d16dd1ab7cd26b86e36.html">Proyecto Semillero Modulo categoría para Adultos</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="990ab2a5117b319f5054481934bc666b7a7d0b7fd27a80e29a1da8ef26ecbf00.html">Catergoria manual para adultos con palabra</a>
+                                                                   (2 examples)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:23:16</td>
+                                                    <td>01:21</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result FAILURE">
+                                                    <td>
+                                                            <a href="36421dcbec78646e7fcf601abea8d179f5ee6c3034169d16dd1ab7cd26b86e36.html">Proyecto Semillero Modulo categoría para Adultos</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="661664eca64bf2772a998b8206766b8037ce46ac1342a17def4d73a15cdd62a0.html">No hay resultados en la categoria adultos con palabra</a>
+                                                                   (2 examples)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:24:37</td>
+                                                    <td>01:27</td>
+                                                    <td><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span style="display:none">FAILURE</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="999b5b19aa39440b8f476e9dee14e97aa1eef141412ec80b60d6ec92bbc07c9f.html">Proyecto Semillero Modulo Inicio Sesion</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="29b63552c3edbe8dab6054883b09b6bf909b427ff46dc63082510dfc2c9f5b69.html">Usuario Existente</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:26:05</td>
+                                                    <td>00:52</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="999b5b19aa39440b8f476e9dee14e97aa1eef141412ec80b60d6ec92bbc07c9f.html">Proyecto Semillero Modulo Inicio Sesion</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="7cf8f0f65945b65bfd4a6f05a683077eef8e16eca1cc9fbd3b943eceee187cc3.html">Contraseña Existente</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:26:57</td>
+                                                    <td>01:05</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="999b5b19aa39440b8f476e9dee14e97aa1eef141412ec80b60d6ec92bbc07c9f.html">Proyecto Semillero Modulo Inicio Sesion</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="f6e0d201ec9ae5bf6cb31d16eb2fe2b0a16ba3d816606e3d8d381c4b28182ce3.html">Usuario NO Existente</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:28:02</td>
+                                                    <td>00:51</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result FAILURE">
+                                                    <td>
+                                                            <a href="999b5b19aa39440b8f476e9dee14e97aa1eef141412ec80b60d6ec92bbc07c9f.html">Proyecto Semillero Modulo Inicio Sesion</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="7608adb049dae3a710d63d137cb0b729676bc7991bd78c70c87cbe9bb3c9a9e5.html">contraseña NO Existente</a>
+                                                                   (1 example)
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>21:28:54</td>
+                                                    <td>01:11</td>
+                                                    <td><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span style="display:none">FAILURE</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 2.0.0</span>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

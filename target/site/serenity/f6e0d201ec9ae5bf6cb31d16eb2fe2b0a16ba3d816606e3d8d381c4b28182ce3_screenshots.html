@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="538ccd2b1cfd7f45a601eb53070d3b6aaafa0fad296feb3c24355eb562f57525.html">Proyecto Semillero Modulo Inicio Sesion</a></span>
+                > <span class="truncate-60"><a
+                    href="f6e0d201ec9ae5bf6cb31d16eb2fe2b0a16ba3d816606e3d8d381c4b28182ce3.html">Usuario NO Existente </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-11-2020 13:27</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Proyecto Semillero Modulo Inicio Sesion </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="4af859eef0b2d88751fe580892f71e01d1e98a1dff7dcf94deb3bb4b4655280a.html">Usuarionoexistente
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Usuario NO Existente
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Ingresar a Mercado Libre y Seleccionar Pais &lt;celda&gt; &lt;hoja de calculo&gt;<br>When Presionar en Ingresar<br>And ingresar usuario &lt;celda&gt; &lt;hoja de calculo&gt;<br>Then Validar NO existencia del usuario</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="9c29beb63322446a0e9857a746b78e6af17923c62745a4252fe4c946e06dbb2f.png" title="Usuario NO Existente #1: {celda=&quot;1&quot;, hoja de calculo=&quot;5&quot;}" width="960"/>
+                <img src="07362ec9bbf4668d089cd4d911bf1b7ee8097e219aaef4540de86f4ff548ebee.png" title="Given Ingresar a Mercado Libre y Seleccionar Pais &quot;1&quot; &quot;5&quot;" width="960"/>
+                <img src="0600eabc138efd9124d58c600eeab18fb2a2c8d9488e495e38033e2db86f4da1.png" title="Ingresar a  mercado  libre y  seleccionar  pais: 1, 5" width="960"/>
+                <img src="617bf8786ebdbc373c1513ade58a4e1ba4d4618aafd3ad0662f89159d924f22e.png" title="Ingresar a  mercado  libre y  seleccionar  pais: 1, 5" width="960"/>
+                <img src="b35a424fa43d64cb4de9d721c0de26b5276ad060feb222dae777a7759aa6a8d2.png" title="When Presionar en Ingresar" width="960"/>
+                <img src="862c618a20ec2bc26594eb6a4d0ff608cc96d3a2fab38a8752f929bf29247c13.png" title="When Presionar en Ingresar" width="960"/>
+                <img src="07362ec9bbf4668d089cd4d911bf1b7ee8097e219aaef4540de86f4ff548ebee.png" title="Presionar en  ingresar" width="960"/>
+                <img src="862c618a20ec2bc26594eb6a4d0ff608cc96d3a2fab38a8752f929bf29247c13.png" title="Presionar en  ingresar" width="960"/>
+                <img src="862c618a20ec2bc26594eb6a4d0ff608cc96d3a2fab38a8752f929bf29247c13.png" title="And ingresar usuario &quot;1&quot; &quot;5&quot;" width="960"/>
+                <img src="71d37f9d02911aff1f63cf201062ccc43929fb1cf2f2e8e546a7e2534993673a.png" title="And ingresar usuario &quot;1&quot; &quot;5&quot;" width="960"/>
+                <img src="862c618a20ec2bc26594eb6a4d0ff608cc96d3a2fab38a8752f929bf29247c13.png" title="Ingresar usuario: 1, 5" width="960"/>
+                <img src="71d37f9d02911aff1f63cf201062ccc43929fb1cf2f2e8e546a7e2534993673a.png" title="Ingresar usuario: 1, 5" width="960"/>
+                <img src="9c29beb63322446a0e9857a746b78e6af17923c62745a4252fe4c946e06dbb2f.png" title="Ingresar usuario: 1, 5" width="960"/>
+                <img src="71d37f9d02911aff1f63cf201062ccc43929fb1cf2f2e8e546a7e2534993673a.png" title="Then Validar NO existencia del usuario" width="960"/>
+                <img src="9c29beb63322446a0e9857a746b78e6af17923c62745a4252fe4c946e06dbb2f.png" title="Then Validar NO existencia del usuario" width="960"/>
+                <img src="9c29beb63322446a0e9857a746b78e6af17923c62745a4252fe4c946e06dbb2f.png" title="Validar NO existencia del usuario" width="960"/>
+                <img src="71d37f9d02911aff1f63cf201062ccc43929fb1cf2f2e8e546a7e2534993673a.png" title="Validar NO existencia del usuario: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

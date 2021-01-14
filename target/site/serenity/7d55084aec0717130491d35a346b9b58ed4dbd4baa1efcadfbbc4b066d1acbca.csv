@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Proyecto Semillero Modulo categoría para Adultos","Filtro automático con paralabra","SUCCESS","2019-12-02T21:22:24.1075842-05:00[America/Bogota]","0.0","52.57"
+"Proyecto Semillero Modulo categoría para Adultos","Catergoria manual para adultos con palabra","SUCCESS","2019-12-02T21:23:16.6862597-05:00[America/Bogota]","0.0","81.11"
+"Proyecto Semillero Modulo categoría para Adultos","No hay resultados en la categoria adultos con palabra","FAILURE","2019-12-02T21:24:37.7973919-05:00[America/Bogota]","0.0","87.41"
+"Proyecto Semillero Modulo Inicio Sesion","Usuario Existente","SUCCESS","2019-12-02T21:26:05.2176451-05:00[America/Bogota]","0.0","52.38"
+"Proyecto Semillero Modulo Inicio Sesion","Contraseña Existente","SUCCESS","2019-12-02T21:26:57.6054365-05:00[America/Bogota]","0.0","65.38"
+"Proyecto Semillero Modulo Inicio Sesion","Usuario NO Existente","SUCCESS","2019-12-02T21:28:02.9872391-05:00[America/Bogota]","0.0","51.82"
+"Proyecto Semillero Modulo Inicio Sesion","contraseña NO Existente","FAILURE","2019-12-02T21:28:54.8083786-05:00[America/Bogota]","0.0","71.83"

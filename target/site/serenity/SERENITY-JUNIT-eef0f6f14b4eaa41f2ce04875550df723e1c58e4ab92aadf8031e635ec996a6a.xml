@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Proyecto Semillero Modulo categoría para Adultos" skipped="0" tests="5" time="102.77" timestamp="2020-11-25T13:24:37.692365500-05:00[America/Bogota]"><testcase name="Filtro automático con paralabra"><failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="junit.framework.AssertionFailedError">expected:&lt;true&gt; but was:&lt;false&gt;</failure><system-err>expected:&lt;true&gt; but was:&lt;false&gt;&#13;
+junit.framework.Assert.fail(Assert.java:57)&#13;
+junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
+junit.framework.Assert.assertEquals(Assert.java:78)&#13;
+junit.framework.Assert.assertEquals(Assert.java:174)&#13;
+junit.framework.Assert.assertEquals(Assert.java:181)&#13;
+com.ProyectoSemillero.MercadoLibre.PageObjects.PaginaPrincipalPageObject.validar_Pop_Up_contenido_para_adulto(PaginaPrincipalPageObject.java:30)&#13;
+com.ProyectoSemillero.MercadoLibre.Steps.CategoriaAdultosAutomaticaStep.validar_Pop_Up_contenido_para_adulto(CategoriaAdultosAutomaticaStep.java:34)&#13;
+com.ProyectoSemillero.MercadoLibre.Definitions.CategoriaAdultosAutomaticaDefinition.validar_Pop_Up_contenido_para_adulto(CategoriaAdultosAutomaticaDefinition.java:26)&#13;
+✽.Validar Pop-Up contenido para adulto(src/test/resources/features/CategoriaAdultos.feature:10)&#13;
+</system-err></testcase><testcase name="Catergoria manual para adultos con palabra"><failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="junit.framework.AssertionFailedError">expected:&lt;true&gt; but was:&lt;false&gt;</failure><system-err>expected:&lt;true&gt; but was:&lt;false&gt;&#13;
+junit.framework.Assert.fail(Assert.java:57)&#13;
+junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
+junit.framework.Assert.assertEquals(Assert.java:78)&#13;
+junit.framework.Assert.assertEquals(Assert.java:174)&#13;
+junit.framework.Assert.assertEquals(Assert.java:181)&#13;
+com.ProyectoSemillero.MercadoLibre.PageObjects.PaginaPrincipalPageObject.validar_Pop_Up_contenido_para_adulto(PaginaPrincipalPageObject.java:30)&#13;
+com.ProyectoSemillero.MercadoLibre.Steps.CategoriaAdultosAutomaticaStep.validar_Pop_Up_contenido_para_adulto(CategoriaAdultosAutomaticaStep.java:34)&#13;
+com.ProyectoSemillero.MercadoLibre.Definitions.CategoriaAdultosAutomaticaDefinition.validar_Pop_Up_contenido_para_adulto(CategoriaAdultosAutomaticaDefinition.java:26)&#13;
+✽.Validar Pop-Up contenido para adulto(src/test/resources/features/CategoriaAdultos.feature:21)&#13;
+</system-err></testcase><testcase name="No hay resultados en la categoria adultos con palabra"/></testsuite>

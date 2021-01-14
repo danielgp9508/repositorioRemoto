@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Proyecto Semillero Modulo Inicio Sesion","Usuario Existente","SUCCESS","2019-12-02T21:26:05.2176451-05:00[America/Bogota]","0.0","52.38"
+"Proyecto Semillero Modulo Inicio Sesion","Contraseña Existente","SUCCESS","2019-12-02T21:26:57.6054365-05:00[America/Bogota]","0.0","65.38"
+"Proyecto Semillero Modulo Inicio Sesion","Usuario NO Existente","SUCCESS","2019-12-02T21:28:02.9872391-05:00[America/Bogota]","0.0","51.82"
